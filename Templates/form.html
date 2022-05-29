@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+       <form action="/" method="get">
+           <div>
+               <label for="author" value="{{ request.form.author }}">Author</label><br>
+               <input type="text" id="author" name="Author"  placeholder='Bill Gates' required><br>
+           </div>
+           <div>
+               <label for="quote">Quote</label><br>
+               <textarea type="text" id="quote" name="Quote" placeholder='Vaccines should be mandatory.' required>{{ request.form.quote }}</textarea><br>
+           </div>
+           <input type="submit" value="Submit">
+       </form>
+</div>
+</body>
+</html>
